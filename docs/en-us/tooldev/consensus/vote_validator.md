@@ -1,6 +1,6 @@
 # Voting, Validators, Delegates and Speaker
 
-The PoS model of NEO is embodied in: (1) Anyone can initiate a transaction to apply for being a validator candidate (as long as they are willing to pay for the system fee); (2) Anyone who holds the NEO token can vote to deside which validator candidate can become a consensus node and the number of consensus nodes at anytime. The votes of consensus nodes are calculated by an algorithm described in this chapter. And voting is a dynamic and continuous process. If the NEO asset of a voter is changed (e.g.the NEO is transferred to another address), the number of votes at the previous voting address will also change, and the list of consensus nodes will change accordingly.
+The PoS model of NEO is embodied in: (1) Anyone can initiate a transaction to apply for being a validator candidate (as long as they are willing to pay for the system fee); (2) Anyone who holds the NEO token can vote to decide which validator candidate can become a consensus node and the number of consensus nodes at anytime. The votes of consensus nodes are calculated by an algorithm described in this chapter. And voting is a dynamic and continuous process. If the NEO asset of a voter is changed (e.g.the NEO is transferred to another address), the number of votes at the previous voting address will also change, and the list of consensus nodes will change accordingly.
 
 At the same time, each block contains `NextConsensus` field, which locks the name list of consensus nodes for next block. That is to say, the current transaction determines the consensus nodes in the next block.
 
@@ -128,7 +128,7 @@ On the probability distribution function, take the portion F ∈ [0.25, 0.75] th
 
 ### Consensus Nodes
 
-In the above steps, we calcuate the number of consensus nodes as `Count`, and take validators from the candiate list ranked by votes in descending order. When candidates is not enough, it will be supplemented from `StandbyValidators`. Finally, the consensus nodes are determined.
+In the above steps, we calculate the number of consensus nodes as `Count`, and take validators from the candidate list ranked by votes in descending order. When candidates is not enough, it will be supplemented from `StandbyValidators`. Finally, the consensus nodes are determined.
 
 > [!Note]
 >
